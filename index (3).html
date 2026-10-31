@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.png?v=2" type="image/png" />
+  <title>Scholix</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body class="landing-page">
+  <a class="skip-link" href="#features">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header__inner">
+      <a class="brand" href="#top" aria-label="Scholix home">
+        <img class="brand__mark" src="../assets/favicon.png" alt="" />
+        <span class="brand__text">Scholix</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#roles">Roles</a>
+        <a href="#how">How it works</a>
+        <a href="#stories">Stories</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost btn--sm header__signin" href="./login.php">Sign in</a>
+        <a class="btn btn--primary btn--sm" href="./login.php">Open dashboard</a>
+        <button class="hamburger" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            Every student record, <em>finally</em> in one calm place.
+          </h1>
+          <p class="hero__lede">
+            Scholix replaces the tangle of spreadsheets, registers and paper files with a single
+            roster your whole school can trust and gives administrators, teachers and students
+            their own dashboard, scoped to what they should actually see.
+          </p>
+
+
+        </div>
+
+        <div class="hero__panel">
+          <img class="hero__image" src="../assets/student.png" alt="Student studying with a laptop and headphones" />
+          <div class="hero-stat hero-stat--fees" aria-label="Fees awaiting: 6 of 26 students">
+            <div class="hero-stat__label"><span class="hero-stat__dot"></span>Fees awaiting</div>
+            <div class="hero-stat__value">6 <small>of 26 students</small></div>
+            <div class="hero-stat__track"><span style="width: 23%"></span></div>
+          </div>
+          <div class="hero-stat hero-stat--attendance" aria-label="Attendance today: 73 percent, 19 of 26 students">
+            <div class="hero-stat__label"><span class="hero-stat__dot"></span>Attendance today</div>
+            <div class="hero-stat__value">73%</div>
+            <div class="hero-stat__track"><span style="width: 73%"></span></div>
+          </div>
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 180" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="heroWaveWash" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#dce8fb" stop-opacity=".42" />
+            <stop offset="1" stop-color="#fff" stop-opacity=".08" />
+          </linearGradient>
+          <linearGradient id="heroWaveBack" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#d5e3fb" />
+            <stop offset=".52" stop-color="#e6eefb" />
+            <stop offset="1" stop-color="#eef3fb" />
+          </linearGradient>
+          <linearGradient id="heroWaveMid" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f3f7fd" />
+            <stop offset=".52" stop-color="#eaf1fc" />
+            <stop offset="1" stop-color="#f4f7fc" />
+          </linearGradient>
+        </defs>
+        <path class="hero-wave__wash" style="fill:url(#heroWaveWash)" d="M0 52C168 19 302 24 450 60C627 104 752 127 913 87C1080 45 1255 21 1440 61V180H0Z" />
+        <path class="hero-wave__back" style="fill:url(#heroWaveBack)" d="M0 78C176 38 311 36 465 72C633 111 770 137 941 97C1115 56 1278 39 1440 75V180H0Z" />
+        <path class="hero-wave__mid" style="fill:url(#heroWaveMid)" d="M0 101C167 64 320 57 484 89C674 126 803 151 980 117C1151 84 1299 62 1440 91V180H0Z" />
+        <path class="hero-wave__contour hero-wave__contour--soft" d="M0 44C168 11 302 16 450 52C627 96 752 119 913 79C1080 37 1255 13 1440 53" />
+        <path class="hero-wave__contour" d="M0 78C176 38 311 36 465 72C633 111 770 137 941 97C1115 56 1278 39 1440 75" />
+        <path class="hero-wave__contour hero-wave__contour--soft" d="M0 119C167 82 320 75 484 107C674 144 803 169 980 135C1151 102 1299 80 1440 109" />
+        <path class="hero-wave__front" d="M0 121C163 91 322 78 492 107C675 139 827 165 997 137C1177 108 1319 87 1440 111V180H0Z" />
+      </svg>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="shell">
+        <header class="section__head">
+          <p class="eyebrow">Built for the front office</p>
+          <h2 class="section__title">Everything a registrar touches, in one system</h2>
+          <p class="section__lede">
+            No module sprawl. Six jobs your school does every single day, each one handled properly
+            inside the dashboard.
+          </p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13A4 4 0 0 1 16 11" /></svg>
+            </span>
+            <h3>Student profiles</h3>
+            <p>Guardian contacts, class, roll number and admission date held together, always current.</p>
+          </article>
+
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg>
+            </span>
+            <h3>Attendance tracking</h3>
+            <p>Daily presence rolls up into a per-student percentage teachers can update in one screen.</p>
+          </article>
+
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M2 10h20" /><path d="M6 15h4" /></svg>
+            </span>
+            <h3>Fees collection</h3>
+            <p>See who paid, who is partial and who is overdue — administrators can settle it in place.</p>
+          </article>
+
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /></svg>
+            </span>
+            <h3>Academic results</h3>
+            <p>Grades attach to the student record, so report cards stop being a separate spreadsheet.</p>
+          </article>
+
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18" /><path d="M5 21V7l7-4 7 4v14" /><path d="M9 21v-5h6v5" /></svg>
+            </span>
+            <h3>Multi-branch ready</h3>
+            <p>Campuses share one roster standard while keeping their own classes and fee plans.</p>
+          </article>
+
+          <article class="feature">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></svg>
+            </span>
+            <h3>Role-scoped access</h3>
+            <p>Administrators manage everything, teachers handle their classes, students see only their own record.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ============ WHY SCHOOLS SWITCH ============ -->
+    <section class="switch-section" aria-labelledby="switchTitle">
+      <div class="switch-grid">
+        <div class="switch-copy">
+          <p class="switch-eyebrow">Why schools switch</p>
+          <h2 class="switch-title" id="switchTitle">One source of truth, from the gate to the <em>report card</em></h2>
+          <p class="switch-lede">The office stops chasing versions of the same class list. Teachers stop re-keying attendance into a second sheet. Families get a straight answer the first time they ask.</p>
+          <ul class="switch-proof">
+            <li><span class="switch-proof__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3 3 7-7" /></svg></span><strong>One roster, edited in one place</strong><small>Updates reach every dashboard the moment they are saved.</small></li>
+            <li><span class="switch-proof__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3 3 7-7" /></svg></span><strong>Fee follow-up that happens before the deadline</strong><small>Partial payments and overdue balances are visible at a glance.</small></li>
+            <li><span class="switch-proof__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 8 3 3 7-7" /></svg></span><strong>Permissions enforced, not just hidden</strong><small>A teacher cannot delete a record, and a student cannot open someone else's.</small></li>
+          </ul>
+        </div>
+        <div class="switch-photo">
+          <img src="../assets/teacher.png" alt="Teacher holding a tablet in a classroom" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROLES ============ -->
+    <section class="section section--tint" id="roles">
+      <div class="shell">
+        <header class="section__head">
+          <p class="eyebrow">One sign-in, three views</p>
+          <h2 class="section__title">Everyone sees exactly what their role allows</h2>
+          <p class="section__lede">
+            After signing in, Scholix opens a dashboard shaped by your role. The permission rules
+            below are enforced across the whole interface — not just hidden in the menu.
+          </p>
+        </header>
+
+        <div class="role-grid">
+          <article class="role-card">
+            <div class="role-card__top">
+              <span class="role-card__icon role-card__icon--admin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></svg>
+              </span>
+              <div>
+                <h3>Administrator</h3>
+                <p class="role-card__tag">Full control of the roster</p>
+              </div>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Add, edit and delete any student record</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Manage sections, school requirements and fee status</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Export the filtered roster and review staff accounts</span></li>
+            </ul>
+            <a class="btn btn--primary role-card__cta" href="./login.php?role=admin">Sign in as administrator</a>
+          </article>
+
+          <article class="role-card">
+            <div class="role-card__top">
+              <span class="role-card__icon role-card__icon--teacher" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /><path d="m9 7 2 2 4-4" /></svg>
+              </span>
+              <div>
+                <h3>Class teacher</h3>
+                <p class="role-card__tag">Your classes and attendance</p>
+              </div>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>See every section and its enrolled students</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Update attendance only in your sections</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Records stay read-only — no adding or deleting</span></li>
+            </ul>
+            <a class="btn btn--ghost role-card__cta" href="./login.php?role=teacher">Sign in as teacher</a>
+          </article>
+
+          <article class="role-card">
+            <div class="role-card__top">
+              <span class="role-card__icon role-card__icon--student" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg>
+              </span>
+              <div>
+                <h3>Student</h3>
+                <p class="role-card__tag">Your own record only</p>
+              </div>
+            </div>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>View your profile and guardian contacts</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Track attendance and school-document progress</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>No access to another student's record</span></li>
+            </ul>
+            <a class="btn btn--ghost role-card__cta" href="./login.php?role=student">Sign in as student</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="shell">
+        <header class="section__head">
+          <p class="eyebrow">How it works</p>
+          <h2 class="section__title">Three steps, then it runs itself</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Sign-in</h3>
+            <p>Scholix maps record such as names, grades and guardian contacts, then flags anything it could not read.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Invite your people</h3>
+            <p>Give each administrator, teacher and student an account. Their dashboard and permissions follow from the role you assign.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Run the day</h3>
+            <p>Mark attendance, collect fees, share report cards. Dashboards and reminders update as you go — no month-end export marathon.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ STORIES ============ -->
+    <section class="section section--tint" id="stories">
+      <div class="shell">
+        <header class="section__head">
+          <p class="eyebrow">From the front office</p>
+          <h2 class="section__title">Registrars stopped dreading the audit</h2>
+        </header>
+
+        <div class="stories-carousel">
+          <div class="quote-grid">
+          <figure class="quote is-active">
+            <blockquote>“We had four versions of the same class list. Now there is one, and the fee reminder goes out.”</blockquote>
+            <figcaption><span class="avatar" data-initials="PN">PN</span><span><strong>Priya Nandakumar</strong><small>Registrar, Hillfort Public School</small></span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“I only see my own classes, which is exactly right. Attendance takes me two minutes at the end of a lesson.”</blockquote>
+            <figcaption><span class="avatar" data-initials="DO">DO</span><span><strong>Daniel Osei</strong><small>Class teacher, Ashgrove Academy</small></span></figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“My attendance and fee balance are just there when I sign in. I stopped asking the office every month.”</blockquote>
+            <figcaption><span class="avatar" data-initials="MT">MT</span><span><strong>Mei-Ling Tan</strong><small>Grade 11 student, Riverton Campus</small></span></figcaption>
+          </figure>
+          </div>
+          <div class="stories-carousel__controls" aria-label="Story controls">
+            <button class="stories-carousel__button" type="button" data-story-prev aria-label="Previous story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7" /></svg></button>
+            <span class="stories-carousel__status" aria-live="polite">1 / 3</span>
+            <button class="stories-carousel__button" type="button" data-story-next aria-label="Next story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7" /></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="shell faq__grid">
+        <div class="faq__intro">
+          <p class="faq__eyebrow">Common questions</p>
+          <h2 class="faq__title">Before you move the roster</h2>
+          <p class="faq__lede">Short answers to what registrars and IT leads ask before switching.</p>
+        </div>
+        <div class="faq__list" aria-label="Frequently asked questions">
+          <details class="faq__item">
+            <summary>Can staff have a physical copy of the roster?</summary>
+            <p class="faq__answer">Yes. Export a spreadsheet with names, grades and guardian contacts; Scholix maps the columns and lists any rows it could not read so nothing is silently dropped.</p>
+          </details>
+          <details class="faq__item">
+            <summary>What exactly can a teacher change?</summary>
+            <p class="faq__answer">Attendance for their own sections only. Student records stay read-only, and adding or deleting records is reserved for administrators.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do students see the whole school?</summary>
+            <p class="faq__answer">No. A student session is scoped to that student's own profile, attendance and fee balance - other records are not reachable from the interface.</p>
+          </details>
+          <details class="faq__item">
+            <summary>We run more than one campus. Does that work?</summary>
+            <p class="faq__answer">Yes. Campuses share the same roster standard while keeping their own sections and fee plans, so a transfer is a move rather than a re-entry.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEET THE TEAM ============ -->
+    <section class="team-section" id="team" aria-labelledby="teamTitle">
+      <div class="shell">
+        <header class="team-section__head">
+          <p class="faq__eyebrow">The people behind Scholix</p>
+          <h2 class="team-section__title" id="teamTitle">Meet the team</h2>
+          <p class="team-section__subtitle">The people making school records simpler for everyone.</p>
+        </header>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-card__photo"><img src="../assets/Gapas.png" alt="Team member 1 photo" /></div>
+            <h3>Gapas, Jermie L.</h3><p>Lead Developer</p>
+          </article>
+          <article class="team-card">
+            <div class="team-card__photo"><img src="../assets/Ilag.png" alt="Team member 2 photo" /></div>
+            <h3>Ilag, John Xyrus G.</h3><p>UI/UX Designer</p>
+          </article>
+          <article class="team-card">
+            <div class="team-card__photo"><img src="../assets/Manzanero.jpeg" alt="Team member 3 photo" /></div>
+            <h3>Manzanero, Adrian D.</h3><p>Frontend Developer</p>
+          </article>
+          <article class="team-card">
+            <div class="team-card__photo"><img src="../assets/Labide.png" alt="Team member 4 photo" /></div>
+            <h3>Labide, Jerusha M.</h3><p>Backend Developer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__grid">
+      <div class="footer__brand">
+        <img class="brand__mark brand__mark--footer" src="../assets/favicon.png" alt="" />
+        <p><strong>Scholix</strong><br />Student records that stay safe.</p>
+      </div>
+      <nav class="footer__col" aria-label="Product">
+        <h3>Product</h3>
+        <a href="#features">Features</a>
+        <a href="#roles">Roles</a>
+        <a href="#how">How it works</a>
+      </nav>
+      <nav class="footer__col" aria-label="Dashboards">
+        <h3>Dashboards</h3>
+        <a href="./login.php?role=admin">Administrator</a>
+        <a href="./login.php?role=teacher">Teacher</a>
+        <a href="./login.php?role=student">Student</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h3>Company</h3>
+        <a href="#stories">Stories</a>
+        <a href="#top">Overview</a>
+        <a href="./login.php">Sign in</a>
+      </nav>
+    </div>
+    <div class="shell footer__base">
+      <p>© <span id="year">2026</span> Scholix. Your school records, organized in one place.</p>
+      <p>Built by 2 IT-4</p>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+

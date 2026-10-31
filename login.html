@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.png?v=2" type="image/png" />
+  <title data-mgx-overview="title">Sign in · Scholix</title>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+
+<body class="auth-body">
+  <a class="skip-link" href="#signinForm">Skip to the sign-in form</a>
+
+  <div class="auth">
+    <!-- Role context panel -->
+    <aside class="auth__aside">
+      <a class="brand brand--on-dark" href="./index.php" aria-label="Back to the Scholix home page">
+        <img class="brand__mark brand__mark--on-dark" src="../assets/favicon.png" alt="" />
+        <span class="brand__text brand__text--on-dark">Scholix</span>
+      </a>
+
+      <div class="auth__aside-body">
+        <p class="eyebrow eyebrow--dark">SCHOOL MANAGEMENT, SIMPLIFIED</p>
+        <h1 class="auth__headline">Your school, in one place</h1>
+        <p class="auth__lede">
+          Keep student records, attendance, grades and school requirements organized in one clear workspace.
+        </p>
+
+        <ul class="auth__caps">
+          <li>Keep student information organized</li>
+          <li>Track grades, attendance and requirements</li>
+          <li>Access tools based on your school role</li>
+        </ul>
+      </div>
+
+      <p class="auth__aside-foot">
+        <a href="./index.php">← Back to the home page</a>
+      </p>
+    </aside>
+
+    <!-- Sign-in form -->
+    <main class="auth__main">
+      <div class="auth__mobile-brand">
+        <a class="brand" href="./index.php" aria-label="Scholix home">
+          <img class="brand__mark" src="../assets/favicon.png" alt="" />
+          <span class="brand__text">Scholix</span>
+        </a>
+        <p>School records, attendance, and grades in one place.</p>
+      </div>
+      <div class="auth__card">
+        <header class="auth__card-head">
+          <h2>Sign in to Scholix</h2>
+          <p>Enter your school account credentials to continue.</p>
+        </header>
+
+        <div class="alert alert--error" id="authError" role="alert" hidden></div>
+
+        <form class="auth__form" id="signinForm" novalidate>
+          <div class="field">
+            <label for="email">School email</label>
+            <input id="email" name="email" type="email" autocomplete="username" placeholder="name@school.org" required />
+            <p class="field__error" id="emailError" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="password">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Your password" required />
+              <button class="password__toggle" type="button" id="passwordToggle" aria-label="Show password" aria-pressed="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
+              </button>
+            </div>
+            <p class="field__error" id="passwordError" hidden></p>
+          </div>
+
+          <div class="auth__row">
+            <label class="check">
+              <input type="checkbox" id="remember" name="remember" />
+              <span>Keep me signed in on this device</span>
+            </label>
+            <span class="auth__hint">Use your school account credentials</span>
+          </div>
+
+          <button class="btn btn--primary btn--lg auth__submit" type="submit" id="signinBtn">Sign in</button>
+        </form>
+        <p class="auth__legal-links">
+          <a href="./privacy.html">Privacy Policy</a><span aria-hidden="true"> · </span><a href="./terms.html">Terms &amp; Conditions</a>
+        </p>
+
+      </div>
+      <a class="auth__mobile-home" href="./index.php">&#8592; Back to the home page</a>
+    </main>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
