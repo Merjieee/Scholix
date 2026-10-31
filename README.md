@@ -10,8 +10,11 @@ The supplied database has three demo accounts and 26 sample student records. Rep
 ACCOUNTS
 --------
 Administrator: admin@scholix.com / admin123
+
 Teacher: teacher@scholix.com / teacher123
+
 Student: student@scholix.com / student123
+
 The student account is linked to Aarav Mehta, roll 6A-001.
 
 These are initial credentials from setup.sql. If an account's email or password was changed in Settings, use the new credentials.
