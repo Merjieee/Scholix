@@ -1,0 +1,12 @@
+    .dash-body .brand__mark {
+      display: block;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      object-fit: contain;
+    }
+
